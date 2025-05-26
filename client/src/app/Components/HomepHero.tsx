@@ -10,9 +10,9 @@ export default function Hero() {
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        className="absolute top-0 left-0 w-full h-600 object-cover z-0"
       >
-        <source src="/videos/home-hero.mp4" type="video/mp4" />
+        <source src="/videos/home-hero.mp4" type="video/mp4 "  />
         Your browser does not support the video tag.
       </video>
 
