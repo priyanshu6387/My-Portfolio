@@ -23,9 +23,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: 'easeOut' }}
-          className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 text-white"
+          className="text-5xl md:text-6xl font-bold leading-tight mb-6 text-red-600"
         >
-          Hi.. I'm <span className="text-indigo-400"></span>
+          Hi.. I'm <span className="text-yellow-400"></span>
           Priyanshu Patel 
         </motion.h1>
 
@@ -34,7 +34,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-lg md:text-2xl mb-8 max-w-2xl mx-auto text-white"
+          className="text-lg md:text-2xl mb-8 max-w-2xl mx-auto text-red-400 font-semibold"
         >
           Fullstack Developer | Open Source Contributor 
         </motion.p>
