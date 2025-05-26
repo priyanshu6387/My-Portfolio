@@ -25,7 +25,8 @@ export default function Hero() {
           transition={{ duration: 1, ease: 'easeOut' }}
           className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 text-white"
         >
-          Your Next Adventure Starts Here
+          Hi.. I'm <span className="text-indigo-400"></span>
+          Priyanshu Patel 
         </motion.h1>
 
         {/* Subheading animation */}
@@ -35,7 +36,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.5 }}
           className="text-lg md:text-2xl mb-8 max-w-2xl mx-auto text-white"
         >
-          Explore endless possibilities with the most innovative solutions for the modern world.
+          Fullstack Developer | Open Source Contributor 
         </motion.p>
 
         {/* Primary Button */}
