@@ -45,7 +45,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 1 }}
-          className="inline-block px-8 py-4 bg-white text-indigo-900 font-semibold rounded-lg shadow-md hover:bg-gray-100 transition mb-4"
+          className="inline-block px-8 py-4 bg-white text-indigo-900 font-semibold rounded-lg shadow-md hover:bg-gray-100 transition mb-2"
         >
           Get Started
         </motion.a>
