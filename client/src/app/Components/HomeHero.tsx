@@ -8,7 +8,7 @@ const HomeHero: FC = () => {
     <div className="relative py-25 flex justify-center items-center bg-cover bg-center text-white"
          style={{ backgroundImage: "url('/images/homehero.png')" }}>
       {/* Hero Text */}
-      <div className="relative z-10 text-center px-4">
+      <div className="relative z-10 text-center px-4 mt-15">
         <h1 className="text-5xl font-bold text-blue-500 mb-4 transition-all duration-300 ease-in-out transform hover:text-white">
           Hi.. I'm Priyanshu Patel
         </h1>

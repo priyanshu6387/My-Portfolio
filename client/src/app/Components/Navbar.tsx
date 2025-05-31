@@ -31,7 +31,8 @@ const Navbar: FC = () => {
 
         {/* Navigation Links (for desktop) */}
         
-        <div className=" ml-[80vmin] flex space-x-8">
+        <div className=" ml-[60vmin] flex space-x-8">
+          <a href="#home" className="text-white-500 hover:text-teal-400 transition-colors">Home</a>
           <a href="#about" className="text-white-500 hover:text-teal-400 transition-colors">About</a>
           <a href="#experience" className="text-white-500 hover:text-teal-400 transition-colors">Experience</a>
           <a href="#skills" className="text-white-500 hover:text-teal-400 transition-colors">Skills</a>
