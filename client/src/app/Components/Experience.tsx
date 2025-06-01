@@ -20,7 +20,7 @@ const Experience: FC = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <h2 className="text-4xl font-bold text-teal-300 mb-6">Experience</h2>
+          <h2 className="text-4xl font-bold text-teal-300 mb-6 mt-[-8vmin]">Experience</h2>
           <div>
             <hr className="w-full mx-auto border-t-2 border-teal-300 mb-4" />
           </div>
