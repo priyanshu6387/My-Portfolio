@@ -35,7 +35,11 @@ const Experience: FC = () => {
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
-          <div className="bg-blue-100 p-8 rounded-lg shadow-lg hover:shadow-xl mt-10 mb-10 ">
+          <div
+            className={`bg-white p-6 border-black border-1 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform ${
+              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            } hover:shadow-xl hover:bg-blue-50 hover:translate-y-[-2vmin] hover:shadow-xl hover:shadow-blue-200 hover:border-blue-100 hover:scale-103`}
+          >
             <h3 className="text-2xl font-semibold text-teal-300 mb-2">
               Fullstack Developer | Triostack Technologies Pvt. Ltd.
             </h3>
