@@ -1,60 +1,80 @@
-"use client";
+// components/Projects.tsx
 import React from "react";
-import { FaExternalLinkAlt } from "react-icons/fa";
 
-const ProjectSection: React.FC = () => {
+type Project = {
+  title: string;
+  description: string;
+  techStack: string[];
+  link?: string;
+};
+
+const projects: Project[] = [
+  {
+    title: "Task Tracker App",
+    description:
+      "A full-stack MERN application for managing tasks with authentication, drag-and-drop UI, and real-time updates.",
+    techStack: ["React", "Node.js", "MongoDB", "Express", "Socket.io"],
+    link: "https://github.com/yourusername/task-tracker",
+  },
+  {
+    title: "E-commerce Platform",
+    description:
+      "Developed a scalable multi-vendor platform with secure payments, admin dashboard, and product management.",
+    techStack: ["Angular", "Spring Boot", "MySQL", "JWT"],
+    link: "https://github.com/yourusername/e-commerce",
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "Personal developer portfolio built with Next.js, Tailwind CSS, and TypeScript showcasing skills and projects.",
+    techStack: ["Next.js", "Tailwind", "TypeScript"],
+    link: "https://yourdomain.com",
+  },
+  {
+    title: "Job Board API",
+    description:
+      "RESTful API for job listings, company profiles, and candidate applications. Integrated with OAuth2.",
+    techStack: ["C#", ".NET Core", "SQL Server", "Swagger"],
+    link: "https://github.com/yourusername/job-board-api",
+  },
+];
+
+const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-16 px-4 bg-white">
-      <div className="max-w-[220vmin] mx-auto ">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 mt-[-14vmin] text-teal-300 mb-12">
-          Projects
-           <div>
-            <hr className="w-full mx-auto  border-t-2 border-teal-300 mb-4 mt-4" />
+    <section id="projects" className="py-12 px-6 md:px-16 mb-6 mt-[-14vmin] bg-white text-teal-300">
+      <h2 className="text-3xl font-bold text-center mb-10 ">Projects</h2>
+       <div>
+            <hr className="w-full mx-auto border-t-2 border-teal-300 mb-10" />
           </div>
-        </h2>
-
-        <div className="w-full mx-auto py-1 px-4 my-8 ">
-          <div className={`bg-white p-6 border-black border-1 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform opacity-100 translate-y-0 hover:shadow-xl hover:bg-blue-50 hover:translate-y-[-2vmin] hover:shadow-xl hover:shadow-blue-200 hover:border-blue-100 hover:scale-103`}>
-            <h3 className="text-3xl font-semibold text-blue-700 mb-3">
-              Triostack Technologies Pvt Ltd
-            </h3>
-            <p className="text-lg text-gray-800 font-medium mb-1">
-              Full Stack Developer
-            </p>
-            <p className="text-gray-600 italic mb-4 text-sm">
-              Jan 2022 – Jan 2024
-            </p>
-            <p className="text-gray-700 text-base mb-6 leading-relaxed">
-              Developed enterprise-grade web applications using MERN and MEAN
-              stacks. Built RESTful APIs, optimized backends with Node.js and
-              .NET, and created responsive UIs with React and Angular. Focused
-              on performance, security, and scalability in Agile team settings.
-            </p>
-            <div className="flex flex-wrap gap-3 text-sm">
-              <span className="bg-blue-100 text-blue-800 px-4 py-1 rounded-full">
-                React.js
-              </span>
-              <span className="bg-green-100 text-green-800 px-4 py-1 rounded-full">
-                Node.js
-              </span>
-              <span className="bg-yellow-100 text-yellow-800 px-4 py-1 rounded-full">
-                Angular
-              </span>
-              <span className="bg-purple-100 text-purple-800 px-4 py-1 rounded-full">
-                .NET
-              </span>
-              <span className="bg-gray-200 text-gray-800 px-4 py-1 rounded-full">
-                MongoDB
-              </span>
-              <span className="bg-pink-100 text-pink-800 px-4 py-1 rounded-full">
-                Agile
-              </span>
+      <div className="grid md:grid-cols-2 gap-6">
+        {projects.map((project, index) => (
+          <div key={index}  className={`bg-white p-6 border-black border-1 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform opacity-100 translate-y-0 hover:shadow-xl hover:bg-blue-50 hover:translate-y-[-2vmin] hover:shadow-xl hover:shadow-blue-200 hover:border-blue-100 hover:scale-103`}
+          >
+            <h3 className="text-xl font-semibold mb-2 text-indigo-700">{project.title}</h3>
+            <p className="text-gray-700 mb-3">{project.description}</p>
+            <div className="mb-3">
+              <span className="font-semibold text-sm">Tech Stack:</span>
+              <ul className="list-disc list-inside text-sm text-gray-600">
+                {project.techStack.map((tech, idx) => (
+                  <li key={idx}>{tech}</li>
+                ))}
+              </ul>
             </div>
+            {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline text-sm"
+              >
+                View Project
+              </a>
+            )}
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );
 };
 
-export default ProjectSection;
+export default Projects;
