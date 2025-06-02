@@ -6,15 +6,15 @@ const ProjectSection: React.FC = () => {
   return (
     <section id="projects" className="py-16 px-4 bg-white">
       <div className="max-w-[220vmin] mx-auto ">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-teal-300 mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 mt-[-14vmin] text-teal-300 mb-12">
           Projects
            <div>
-            <hr className="w-full mx-auto border-t-2 border-teal-300 mb-4 mt-4" />
+            <hr className="w-full mx-auto  border-t-2 border-teal-300 mb-4 mt-4" />
           </div>
         </h2>
 
-        <div className="w-full mx-auto my-8 ">
-          <div className="bg-gray-100 rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-shadow duration-300">
+        <div className="w-full mx-auto py-1 px-4 my-8 ">
+          <div className={`bg-white p-6 border-black border-1 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform opacity-100 translate-y-0 hover:shadow-xl hover:bg-blue-50 hover:translate-y-[-2vmin] hover:shadow-xl hover:shadow-blue-200 hover:border-blue-100 hover:scale-103`}>
             <h3 className="text-3xl font-semibold text-blue-700 mb-3">
               Triostack Technologies Pvt Ltd
             </h3>

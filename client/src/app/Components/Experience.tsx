@@ -31,7 +31,7 @@ const Experience: FC = () => {
 
         {/* Experience Card */}
         <div
-          className={`transition-opacity duration-1000 ease-in-out ${
+          className={`transition-opacity duration-1000 py-1 px-4 ease-in-out ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
         >
