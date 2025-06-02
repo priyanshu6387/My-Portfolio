@@ -5,6 +5,7 @@ import About from './Components/About'
 import Experience from './Components/Experience'
 import TechnicalSkills from './Components/Skills'
 import ProjectSection from './Components/Projects'
+import KeyAchievements from './Components/KeyAchievments'
 
 
 const page = () => {
@@ -16,6 +17,7 @@ const page = () => {
     <Experience/>
     <TechnicalSkills/>
     <ProjectSection/>
+    <KeyAchievements/>
     
     </>
   )

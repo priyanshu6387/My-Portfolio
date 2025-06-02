@@ -30,7 +30,7 @@ const TechnicalSkills: React.FC = () => {
         </div>
 
         {/* Skill Cards */}
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 mb-10 mt-10">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8 mb-10 mt-10 py-1 px-4">
           {/* Frontend Skill Card */}
           <div
             className={`bg-white p-6 border-black border-1 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform ${

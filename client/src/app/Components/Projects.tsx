@@ -41,14 +41,14 @@ const projects: Project[] = [
 
 const Projects: React.FC = () => {
   return (
-    <section id="projects" className="py-10 mx-auto px-6 mb-6 mt-[-14vmin] bg-white text-teal-300">
-      <h2 className="text-4xl font-bold text-teal-300 text-center mb-6 ">Projects</h2>
+    <section id="projects" className="py-10 mx-auto px-6 mb-6 mt-[-15vmin] bg-white text-teal-300">
+      <h2 className="text-4xl font-bold text-teal-300 text-center mb-6">Projects</h2>
        <div>
             <hr className="w-full mx-auto border-t-2 border-teal-300 mb-10" />
           </div>
-      <div className="grid md:grid-cols-2 gap-6  py-1 px-4">
+      <div className="grid md:grid-cols-2 gap-6 py-1 px-4">
         {projects.map((project, index) => (
-          <div key={index}  className={`bg-white p-6 border-black border-1 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform opacity-100 translate-y-0 hover:shadow-xl hover:bg-blue-50 hover:translate-y-[-2vmin] hover:shadow-xl hover:shadow-blue-200 hover:border-blue-100 hover:scale-103`}
+          <div key={index} className={`bg-white p-6 border-black border-1 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform opacity-100 translate-y-0 hover:shadow-xl hover:bg-blue-50 hover:translate-y-[-2vmin] hover:shadow-xl hover:shadow-blue-200 hover:border-blue-100 hover:scale-103`}
           >
             <h3 className="text-xl font-semibold mb-2 text-indigo-700">{project.title}</h3>
             <p className="text-gray-700 mb-3">{project.description}</p>
