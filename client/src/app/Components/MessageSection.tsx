@@ -26,7 +26,7 @@ const MessageSection = () => {
 
       {/* Form */}
       <motion.form
-         className={`space-y-6 border-black border-1 max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform opacity-100 translate-y-0 hover:shadow-xl hover:bg-white hover:translate-y-[-2vmin] hover:shadow-xl hover:shadow-blue-200 hover:border-blue-100 hover:scale-103`}
+         className={`space-y-6 border-black border-1 max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform opacity-100 translate-y-0 hover:shadow-xl hover:bg-blue-30 hover:translate-y-[-2vmin] hover:shadow-xl hover:shadow-blue-200 hover:border-blue-100 hover:scale-103`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}

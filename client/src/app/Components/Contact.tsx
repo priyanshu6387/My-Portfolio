@@ -54,21 +54,21 @@ const Contact = () => {
           <ContactItem
             Icon={FaEnvelope}
             label="Email"
-            value="hemasagartg@gmail.com"
-            href="mailto:hemasagartg@gmail.com"
+            value="priyanshupatel405@gmail.com"
+            href="mailto:priyanshupatel405@gmail.com"
             color="#EA4335"
           />
           <ContactItem
             Icon={FaPhoneAlt}
             label="Phone"
-            value="+91 9353219313"
-            href="tel:+919353219313"
+            value="+91 6387760877"
+            href="tel:+916387760877"
             color="#34A853"
           />
           <ContactItem
             Icon={FaMapMarkerAlt}
             label="Location"
-            value="Vidyanagara, Tumakuru, Karnataka - 572101"
+            value="Greater Noida, UP India"
             color="#FABB05"
           />
         </motion.div>
@@ -78,15 +78,15 @@ const Contact = () => {
           <ContactItem
             Icon={FaLinkedin}
             label="LinkedIn"
-            value="linkedin.com/in/hemasagar-t-g"
-            href="https://linkedin.com/in/hemasagar-t-g"
+            value="linkedin.com/in/priyanshu-patel"
+            href="https://www.linkedin.com/in/priyanshu-patel-3a100a323/"
             color="#0077B5"
           />
           <ContactItem
             Icon={FaGithub}
             label="GitHub"
-            value="github.com/yourusername"
-            href="https://github.com/yourusername"
+            value="https://github.com/priyanshu6387"
+            href="https://github.com/priyanshu6387"
             color="#181717"
           />
           <ContactItem
@@ -120,10 +120,9 @@ const ContactItem = ({
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}
-      transition={{ type: "spring", stiffness: 300 }}
-      className="flex items-center gap-4 p-4 rounded-lg hover:bg-sky-50 transition w-full max-w-md"
+      className="flex items-center gap-4 p-4 rounded-lg w-full max-w-md shadow-lg transition-all duration-300 ease-in-out transform opacity-100 translate-y-0 hover:shadow-xl hover:bg-blue-30 hover:translate-y-[-1vmin] hover:shadow-xl hover:shadow-blue-200 hover:border-blue-300 hover:scale-102"
     >
-      <Icon className="w-6 h-6 flex-shrink-0" style={{ color }} />
+      <Icon className="w-6 h-6" style={{ color }} />
       <div>
         <p className="text-sm font-semibold text-gray-800">{label}</p>
         {href ? (
