@@ -7,6 +7,7 @@ import TechnicalSkills from './Components/Skills'
 import ProjectSection from './Components/Projects'
 import KeyAchievements from './Components/KeyAchievments'
 import Contact from './Components/Contact'
+import MessageSection from './Components/MessageSection'
 
 
 
@@ -22,6 +23,7 @@ const page = () => {
     <ProjectSection/>
     <KeyAchievements/>
     <Contact/>
+    <MessageSection/>
     </>
   )
 }
