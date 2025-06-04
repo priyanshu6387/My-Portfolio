@@ -21,7 +21,7 @@ const About: FC = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-4xl font-bold mb-4 text-teal-300">About Me</h2>
+          <h2 className="text-4xl font-bold mb-4 text-blue-500">About Me</h2>
            <div>
             <hr className="w-full mx-auto border-t-2 border-teal-300 mb-4" />
           </div>

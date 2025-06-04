@@ -8,7 +8,7 @@ const Navbar: FC = () => {
   const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
-    <nav className="bg-white/80 py-2 px-6 shadow-md fixed top-0 left-0 w-full z-50">
+    <nav className="bg-white/80 py-2 px-8 shadow-md fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex justify-between text-white items-center">
         {/* Brand Name */}
         <div className="text-blue-600 text-2xl font-bold hover:text-teal-400 transition-colors">
