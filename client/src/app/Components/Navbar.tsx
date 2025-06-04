@@ -15,7 +15,6 @@ const Navbar: FC = () => {
           PRIYANSHU PATEL
         </div>
 
-        {/* Hamburger Icon (for mobile view) */}
         <div className="md:hidden flex items-center ">
           <button
             onClick={toggleMenu}
@@ -32,7 +31,6 @@ const Navbar: FC = () => {
         {/* Navigation Links (for desktop) */}
         
         <div className=" ml-[60vmin] flex space-x-8">
-          <a href="#home" className="text-blue-600 hover:text-teal-400 transition-colors">Home</a>
           <a href="#about" className="text-blue-600 hover:text-teal-400 transition-colors">About</a>
           <a href="#experience" className="text-blue-600 hover:text-teal-400 transition-colors">Experience</a>
           <a href="#skills" className="text-blue-600 hover:text-teal-400 transition-colors">Skills</a>
