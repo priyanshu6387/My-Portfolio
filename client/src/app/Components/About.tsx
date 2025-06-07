@@ -23,7 +23,7 @@ const About: FC = () => {
         >
           <h2 className="text-4xl font-bold mb-4 text-blue-500">About Me</h2>
            <div>
-            <hr className="w-full mx-auto border-t-2 border-teal-300 mb-4" />
+            <hr className="w-full mx-auto border-t-2 border-blue-600 mb-4" />
           </div>
           <p className="text-lg mb-6 mt-9 text-black">
             Hi, I'm Priyanshu Patel, a passionate Fullstack Developer with expertise in front-end and back-end technologies. I love solving complex problems, contributing to open-source projects, and continually improving my skills.
