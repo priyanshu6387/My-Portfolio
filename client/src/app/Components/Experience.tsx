@@ -22,7 +22,7 @@ const Experience: FC = () => {
         >
           <h2 className="text-4xl font-bold text-blue-500 mb-6 mt-[-8vmin]">Experience</h2>
           <div>
-            <hr className="w-full mx-auto border-t-2 border-teal-300 mb-4" />
+            <hr className="w-full mx-auto border-t-2 border-blue-600 mb-4" />
           </div>
           <p className="text-lg mb-6 mt-9 text-black">
             Here's a glimpse of my work as a Fullstack Developer at Triostack Technologies Pvt. Ltd.
@@ -40,7 +40,7 @@ const Experience: FC = () => {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             } hover:shadow-xl hover:bg-blue-50 hover:translate-y-[-2vmin] hover:shadow-xl hover:shadow-blue-200 hover:border-blue-100 hover:scale-103`}
           >
-            <h3 className="text-2xl font-semibold text-teal-300 mb-2">
+            <h3 className="text-2xl font-semibold text-blue-500 mb-2">
               Fullstack Developer | Triostack Technologies Pvt. Ltd.
             </h3>
             <p className="text-lg text-black mb-4">
@@ -53,7 +53,7 @@ const Experience: FC = () => {
             {/* Skills/Technologies */}
             <div className="flex space-x-6 mt-4">
               <div className="text-center hover:scale-105 transition-transform duration-300">
-                <h4 className="text-teal-300 font-semibold">Frontend</h4>
+                <h4 className="text-blue-500 font-semibold">Frontend</h4>
                 <ul className="text-black">
                   <li>React</li>
                   <li>Next.js</li>
@@ -63,7 +63,7 @@ const Experience: FC = () => {
               </div>
 
               <div className="text-center hover:scale-105 transition-transform duration-300">
-                <h4 className="text-teal-300 font-semibold">Backend</h4>
+                <h4 className="text-blue-500 font-semibold">Backend</h4>
                 <ul className="text-black">
                   <li>Node.js</li>
                   <li>Express.js</li>
@@ -75,7 +75,7 @@ const Experience: FC = () => {
 
             {/* Project Highlights */}
             <div className="mt-6">
-              <h5 className="text-teal-300 font-semibold text-lg">Project Highlights</h5>
+              <h5 className="text-blue-500 font-semibold text-lg">Project Highlights</h5>
               <ul className="list-disc pl-6 text-black">
                 <li>Developed and deployed a full-stack web application for a client in the e-commerce domain, improving user experience and increasing conversion rates by 15%.</li>
                 <li>Worked closely with the design team to implement responsive UI designs using React and TailwindCSS.</li>
