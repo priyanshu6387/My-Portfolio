@@ -22,7 +22,7 @@ const TechnicalSkills: React.FC = () => {
         >
           <h2 className="text-4xl font-bold text-blue-500 mb-6 mt-[-8vmin]">Technical Skills</h2>
            <div>
-            <hr className="w-full mx-auto border-t-2 border-teal-300 mb-4" />
+            <hr className="w-full mx-auto border-t-2 border-blue-600 mb-4" />
           </div>
           <p className="text-lg mb-6 mt-9 text-black">
             Below are the skills I have developed over time as a Fullstack Developer.
