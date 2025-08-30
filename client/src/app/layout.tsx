@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   keywords: 'Priyanshu Patel, General Manager, Technical Head, Triostack Technologies, Next.js, TypeScript, Node.js, React, MongoDB, portfolio, web development, India',
   authors: [{ name: 'Priyanshu Patel' }],
   creator: 'Priyanshu Patel',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',

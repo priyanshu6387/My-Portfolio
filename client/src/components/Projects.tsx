@@ -63,14 +63,14 @@ export default function Projects() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8"
         >
           {PROJECTS.map((project, index) => (
             <motion.div
               key={project.title}
               variants={cardVariants}
               whileHover={{ y: -12, scale: 1.02 }}
-              className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl border border-white/30 dark:border-gray-700/30 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 h-full flex flex-col group relative overflow-hidden p-8 hover:bg-white/90 dark:hover:bg-gray-800/90"
+              className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl border border-white/30 dark:border-gray-700/30 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 h-full flex flex-col group relative overflow-hidden p-6 sm:p-8 hover:bg-white/90 dark:hover:bg-gray-800/90"
             >
               {/* Project Header */}
               <div className="mb-8">
@@ -138,7 +138,7 @@ export default function Projects() {
               </div>
 
               {/* Action Buttons */}
-              <div className="mt-auto flex flex-col sm:flex-row gap-3">
+              <div className="mt-auto flex flex-col sm:flex-row gap-3 mt-6">
                 {project.links.map((link, idx) => (
                   <motion.a
                     key={link.label}
@@ -151,7 +151,7 @@ export default function Projects() {
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`group/btn flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-medium text-responsive-sm transition-all duration-300 shadow-lg hover:shadow-xl ${
+                    className={`group/btn flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-medium text-responsive-sm transition-all duration-300 shadow-lg hover:shadow-xl ${
                       link.label === "Live"
                         ? "btn-primary"
                         : link.label === "GitHub"

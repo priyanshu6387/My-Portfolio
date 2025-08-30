@@ -65,16 +65,16 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    title: "CampusClassifier",
-    description: "AI email classification (academic/promotional/placement/events) with DistilBERT.",
+    title: "Codemap",
+    description: "Modern web development platform and services website showcasing innovative solutions.",
     highlights: [
-      "92% macro F1 on internal test set",
-      "Admin dashboard with filters & exports",
-      "Pluggable inference service"
+      "Professional business website with modern UI/UX",
+      "Responsive design optimized for all devices",
+      "Showcasing company services and expertise"
     ],
-    tech: ["Next.js", "Python", "FastAPI", "Tailwind", "HuggingFace"],
+    tech: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Modern Web"],
     links: [
-      { label: "Live", href: "https://campusclassifier.example.com" }
+      { label: "Live", href: "https://codemap.online" }
     ],
   },
 ];

@@ -62,7 +62,7 @@ export default function TechMarquee() {
             className="flex whitespace-nowrap"
           >
             {/* First set of technologies */}
-            <div className="flex items-center space-x-4 sm:space-x-6 lg:space-x-8 px-4">
+            <div className="flex items-center space-x-3 sm:space-x-4 md:space-x-6 lg:space-x-8 px-4">
               {technologies.map((tech, index) => (
                 <motion.div
                   key={`first-${index}`}
@@ -71,7 +71,7 @@ export default function TechMarquee() {
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.1, y: -8, rotate: 2 }}
-                  className="group px-6 py-4 glass-sm text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap transition-all duration-300 hover:glass hover:shadow-2xl hover:border-brand-500/50 cursor-default relative overflow-hidden rounded-2xl"
+                  className="group px-4 sm:px-6 py-3 sm:py-4 glass-sm text-responsive-xs sm:text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap transition-all duration-300 hover:glass hover:shadow-2xl hover:border-brand-500/50 cursor-default relative overflow-hidden rounded-2xl"
                 >
                   <span className="relative z-10">{tech}</span>
                   <motion.div
@@ -86,11 +86,11 @@ export default function TechMarquee() {
             </div>
 
             {/* Duplicate set for seamless loop */}
-            <div className="flex items-center space-x-4 sm:space-x-6 lg:space-x-8 px-4" aria-hidden="true">
+            <div className="flex items-center space-x-3 sm:space-x-4 md:space-x-6 lg:space-x-8 px-4" aria-hidden="true">
               {technologies.map((tech, index) => (
                 <div
                   key={`second-${index}`}
-                  className="px-6 py-4 glass-sm text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap rounded-2xl"
+                  className="px-4 sm:px-6 py-3 sm:py-4 glass-sm text-responsive-xs sm:text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap rounded-2xl"
                 >
                   {tech}
                 </div>
@@ -125,29 +125,29 @@ export default function TechMarquee() {
           viewport={{ once: true }}
           className="mt-16 lg:mt-20"
         >
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="glass-sm rounded-2xl p-6 text-center hover:glass transition-all duration-300 group">
-              <div className="w-12 h-12 bg-gradient-to-r from-brand-500 to-primary-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Code className="w-6 h-6 text-white" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto">
+            <div className="glass-sm rounded-2xl p-4 sm:p-6 text-center hover:glass transition-all duration-300 group">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-brand-500 to-primary-500 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Code className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">Frontend</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">React, Next.js, TypeScript</p>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">Frontend</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">React, Next.js, TypeScript</p>
             </div>
             
-            <div className="glass-sm rounded-2xl p-6 text-center hover:glass transition-all duration-300 group">
-              <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Zap className="w-6 h-6 text-white" />
+            <div className="glass-sm rounded-2xl p-4 sm:p-6 text-center hover:glass transition-all duration-300 group">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Zap className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">Backend</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">Node.js, Python, FastAPI</p>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">Backend</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">Node.js, Python, FastAPI</p>
             </div>
             
-            <div className="glass-sm rounded-2xl p-6 text-center hover:glass transition-all duration-300 group">
-              <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Sparkles className="w-6 h-6 text-white" />
+            <div className="glass-sm rounded-2xl p-4 sm:p-6 text-center hover:glass transition-all duration-300 group">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+                <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">DevOps</h3>
-              <p className="text-gray-600 dark:text-gray-400 text-sm">Docker, CI/CD, Cloud</p>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-800 dark:text-gray-200 mb-2">DevOps</h3>
+              <p className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">Docker, CI/CD, Cloud</p>
             </div>
           </div>
         </motion.div>

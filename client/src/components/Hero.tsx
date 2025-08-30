@@ -89,13 +89,13 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.2 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-16"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 md:gap-6 mb-12 sm:mb-16"
           >
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection("#projects")}
-              className="btn-primary text-responsive-base px-8 py-4 sm:px-10 sm:py-4 flex items-center gap-3 group shadow-2xl hover:shadow-brand-500/25"
+              className="btn-primary text-responsive-base px-6 py-3 sm:px-8 sm:py-4 md:px-10 flex items-center gap-2 sm:gap-3 group shadow-2xl hover:shadow-brand-500/25 w-full sm:w-auto justify-center"
             >
               <span>View Projects</span>
               <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
@@ -105,7 +105,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               onClick={downloadResume}
-              className="btn-secondary text-responsive-base px-8 py-4 sm:px-10 sm:py-4 flex items-center gap-3 group shadow-2xl"
+              className="btn-secondary text-responsive-base px-6 py-3 sm:px-8 sm:py-4 md:px-10 flex items-center gap-2 sm:gap-3 group shadow-2xl w-full sm:w-auto justify-center"
             >
               <span>Download Resume</span>
               <Download className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-200" />
@@ -115,7 +115,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection("#contact")}
-              className="btn-accent text-responsive-base px-8 py-4 sm:px-10 sm:py-4 flex items-center gap-3 group shadow-2xl hover:shadow-purple-500/25"
+              className="btn-accent text-responsive-base px-6 py-3 sm:px-8 sm:py-4 md:px-10 flex items-center gap-2 sm:gap-3 group shadow-2xl hover:shadow-purple-500/25 w-full sm:w-auto justify-center"
             >
               <span>Let&apos;s Talk</span>
               <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform duration-200" />
@@ -141,19 +141,19 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.6 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto mb-12"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-2xl mx-auto mb-12"
           >
-            <div className="glass-sm rounded-2xl p-6 text-center hover:glass transition-all duration-300">
-              <div className="text-3xl font-bold gradient-text mb-2">5+</div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">Years Experience</div>
+            <div className="glass-sm rounded-2xl p-4 sm:p-6 text-center hover:glass transition-all duration-300">
+              <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2">5+</div>
+              <div className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">Years Experience</div>
             </div>
-            <div className="glass-sm rounded-2xl p-6 text-center hover:glass transition-all duration-300">
-              <div className="text-3xl font-bold gradient-text mb-2">50+</div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">Projects Completed</div>
+            <div className="glass-sm rounded-2xl p-4 sm:p-6 text-center hover:glass transition-all duration-300">
+              <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2">50+</div>
+              <div className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">Projects Completed</div>
             </div>
-            <div className="glass-sm rounded-2xl p-6 text-center hover:glass transition-all duration-300">
-              <div className="text-3xl font-bold gradient-text mb-2">20+</div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">Technologies</div>
+            <div className="glass-sm rounded-2xl p-4 sm:p-6 text-center hover:glass transition-all duration-300">
+              <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2">20+</div>
+              <div className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">Technologies</div>
             </div>
           </motion.div>
 

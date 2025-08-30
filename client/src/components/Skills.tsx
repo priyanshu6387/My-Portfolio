@@ -73,14 +73,14 @@ export default function Skills() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-16"
         >
           {SKILLS.map((skillGroup, index) => (
             <motion.div
               key={skillGroup.title}
               variants={cardVariants}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="card card-hover p-8 relative overflow-hidden group"
+              className="card card-hover p-6 sm:p-8 relative overflow-hidden group"
             >
               {/* Hover Effect Overlay */}
               <motion.div
@@ -92,8 +92,8 @@ export default function Skills() {
 
               {/* Group Header */}
               <div className="text-center mb-8 relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-r from-brand-500 to-primary-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {skillIcons[skillGroup.title as keyof typeof skillIcons] || <Brain className="w-8 h-8 text-white" />}
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-brand-500 to-primary-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {skillIcons[skillGroup.title as keyof typeof skillIcons] || <Brain className="w-6 h-6 sm:w-8 sm:h-8 text-white" />}
                 </div>
                 <h3 className="text-responsive-lg font-bold text-gray-800 dark:text-white mb-2">
                   {skillGroup.title}

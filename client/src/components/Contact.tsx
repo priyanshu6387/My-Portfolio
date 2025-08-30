@@ -86,7 +86,7 @@ export default function Contact() {
           </p>
         </motion.div>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
           {/* Enhanced Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -94,7 +94,7 @@ export default function Contact() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="card p-8 md:p-10 relative overflow-hidden group">
+            <div className="card p-6 sm:p-8 md:p-10 relative overflow-hidden group">
               {/* Hover Effect Overlay */}
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-brand-500/5 to-primary-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -104,18 +104,18 @@ export default function Contact() {
               />
 
               <div className="relative z-10">
-                <div className="flex items-center gap-3 mb-8">
-                  <div className="w-12 h-12 bg-gradient-to-r from-brand-500 to-primary-500 rounded-2xl flex items-center justify-center">
-                    <MessageCircle className="w-6 h-6 text-white" />
+                <div className="flex items-center gap-3 mb-6 sm:mb-8">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-brand-500 to-primary-500 rounded-2xl flex items-center justify-center">
+                    <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </div>
-                  <h3 className="text-responsive-xl font-bold text-gray-800 dark:text-white">
+                  <h3 className="text-responsive-lg sm:text-responsive-xl font-bold text-gray-800 dark:text-white">
                     Send me a message
                   </h3>
                 </div>
                 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-responsive-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
+                    <label htmlFor="name" className="block text-responsive-sm font-medium text-gray-700 dark:text-gray-300 mb-2 sm:mb-3">
                       Name
                     </label>
                     <input
@@ -125,13 +125,13 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 glass-sm border border-white/30 dark:border-gray-600/50 rounded-xl text-gray-700 dark:text-gray-300 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500/50 transition-all duration-300 hover:glass"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 glass-sm border border-white/30 dark:border-gray-600/50 rounded-xl text-gray-700 dark:text-gray-300 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500/50 transition-all duration-300 hover:glass"
                       placeholder="Your name"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-responsive-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
+                    <label htmlFor="email" className="block text-responsive-sm font-medium text-gray-700 dark:text-gray-300 mb-2 sm:mb-3">
                       Email
                     </label>
                     <input
@@ -141,13 +141,13 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 glass-sm border border-white/30 dark:border-gray-600/50 rounded-xl text-gray-700 dark:text-gray-300 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500/50 transition-all duration-300 hover:glass"
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 glass-sm border border-white/30 dark:border-gray-600/50 rounded-xl text-gray-700 dark:text-gray-300 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500/50 transition-all duration-300 hover:glass"
                       placeholder="your.email@example.com"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-responsive-sm font-medium text-gray-700 dark:text-gray-300 mb-3">
+                    <label htmlFor="message" className="block text-responsive-sm font-medium text-gray-700 dark:text-gray-300 mb-2 sm:mb-3">
                       Message
                     </label>
                     <textarea
@@ -156,8 +156,8 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       required
-                      rows={5}
-                      className="w-full px-4 py-3 glass-sm border border-white/30 dark:border-gray-600/50 rounded-xl text-gray-700 dark:text-gray-300 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500/50 transition-all duration-300 hover:glass resize-none"
+                      rows={4}
+                      className="w-full px-3 sm:px-4 py-2 sm:py-3 glass-sm border border-white/30 dark:border-gray-600/50 rounded-xl text-gray-700 dark:text-gray-300 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500/50 focus:border-brand-500/50 transition-all duration-300 hover:glass resize-none"
                       placeholder="Tell me about your project or just say hello!"
                     />
                   </div>
@@ -166,9 +166,9 @@ export default function Contact() {
                     type="submit"
                     whileHover={{ scale: 1.02, y: -2 }}
                     whileTap={{ scale: 0.98 }}
-                    className="btn-primary w-full text-responsive-base py-4 flex items-center justify-center gap-3 shadow-2xl hover:shadow-brand-500/25"
+                    className="btn-primary w-full text-responsive-base py-3 sm:py-4 flex items-center justify-center gap-2 sm:gap-3 shadow-2xl hover:shadow-brand-500/25"
                   >
-                    <Send className="w-5 h-5" />
+                    <Send className="w-4 h-4 sm:w-5 sm:h-5" />
                     Send Message
                   </motion.button>
                 </form>
