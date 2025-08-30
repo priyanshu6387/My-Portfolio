@@ -218,6 +218,22 @@ export default function Contact() {
                     </div>
                   </motion.a>
 
+                  <motion.a
+                    href={`https://wa.me/${PROFILE.phone.replace(/\s+/g, '')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.02, y: -2 }}
+                    className="flex items-center gap-4 p-5 glass-sm rounded-2xl hover:glass transition-all duration-300 group"
+                  >
+                    <div className="w-14 h-14 bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Phone className="w-7 h-7 text-white" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-gray-800 dark:text-white text-responsive-base">Phone & WhatsApp</p>
+                      <p className="text-green-600 dark:text-green-400 text-responsive-sm">{PROFILE.phone}</p>
+                    </div>
+                  </motion.a>
+
                   <div className="flex items-center gap-4 p-5 glass-sm rounded-2xl">
                     <div className="w-14 h-14 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center">
                       <MapPin className="w-7 h-7 text-white" />

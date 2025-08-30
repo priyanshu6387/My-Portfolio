@@ -28,6 +28,7 @@ export const PROFILE = {
   yearsOfExperience: 0, // Fresh graduate/new professional
   availability: "Open to freelance & full-time",
   email: "hello@yourdomain.com",
+  phone: "+91 98765 43210",
   socials: [
     { label: "GitHub", href: "https://github.com/yourhandle" },
     { label: "LinkedIn", href: "https://linkedin.com/in/yourhandle" },

@@ -55,6 +55,7 @@ export const PROFILE = {
   yearsOfExperience: 0,
   availability: "Your Availability",
   email: "your.email@domain.com",
+  phone: "+91 98765 43210",
   socials: [
     { label: "GitHub", href: "https://github.com/yourhandle" },
     { label: "LinkedIn", href: "https://linkedin.com/in/yourhandle" },
