@@ -94,16 +94,17 @@ export const EXPERIENCE: Experience[] = [
     tech: ["Leadership", "Project Management", "Technical Strategy", "Team Management"],
   },
   {
-    role: "Software Developer Intern",
-    company: "Tech Solutions Inc",
-    start: "Jan 2025",
-    end: "May 2025",
+    role: "Fullstack Developer Intern",
+    company: "Codemap (A brand of Triostack Technologies Pvt. Ltd.)",
+    start: "May 2025",
+    end: "June 2025",
     bullets: [
-      "Developed web applications using modern technologies",
+      "Developed full-stack web applications using modern technologies",
       "Collaborated with senior developers on client projects",
-      "Learned industry best practices and development workflows"
+      "Learned industry best practices and development workflows",
+      "Worked on both frontend and backend development tasks"
     ],
-    tech: ["React", "Node.js", "JavaScript", "Git"],
+    tech: ["React", "Node.js", "JavaScript", "Git", "Fullstack Development"],
   },
 ];
 
