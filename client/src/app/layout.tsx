@@ -59,7 +59,7 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
-          <main className="pt-24">
+          <main>
             {children}
           </main>
           <Footer />
