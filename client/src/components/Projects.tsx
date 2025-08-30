@@ -70,11 +70,11 @@ export default function Projects() {
               key={project.title}
               variants={cardVariants}
               whileHover={{ y: -12, scale: 1.02 }}
-              className="card card-hover h-full flex flex-col group relative overflow-hidden"
+              className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl border border-white/30 dark:border-gray-700/30 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-500 h-full flex flex-col group relative overflow-hidden p-8 hover:bg-white/90 dark:hover:bg-gray-800/90"
             >
               {/* Project Header */}
-              <div className="mb-6">
-                <div className="flex items-center justify-between mb-4">
+              <div className="mb-8">
+                <div className="flex items-center justify-between mb-6">
                   <h3 className="text-responsive-xl font-bold text-gray-800 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors duration-300">
                     {project.title}
                   </h3>
@@ -91,7 +91,7 @@ export default function Projects() {
               </div>
 
               {/* Highlights */}
-              <div className="mb-6 flex-grow">
+              <div className="mb-8 flex-grow">
                 <h4 className="text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 mb-4 uppercase tracking-wide flex items-center gap-2">
                   <div className="w-2 h-2 bg-brand-500 rounded-full" />
                   Key Achievements
@@ -116,8 +116,8 @@ export default function Projects() {
               </div>
 
               {/* Tech Stack */}
-              <div className="mb-6">
-                <h4 className="text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 mb-3 uppercase tracking-wide flex items-center gap-2">
+              <div className="mb-8">
+                <h4 className="text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 mb-4 uppercase tracking-wide flex items-center gap-2">
                   <div className="w-2 h-2 bg-primary-500 rounded-full" />
                   Technologies
                 </h4>
@@ -129,7 +129,7 @@ export default function Projects() {
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.2, delay: idx * 0.05 }}
                       viewport={{ once: true }}
-                      className="px-3 py-1.5 glass-sm text-responsive-xs font-medium text-gray-700 dark:text-gray-300 rounded-full border border-white/30 dark:border-gray-600/50 hover:border-brand-500/50 hover:glass transition-all duration-300 group-hover:scale-105"
+                      className="px-3 py-2 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm text-responsive-xs font-medium text-gray-700 dark:text-gray-300 rounded-xl border border-white/40 dark:border-gray-600/60 hover:border-brand-500/60 hover:bg-white/70 dark:hover:bg-gray-700/70 transition-all duration-300 group-hover:scale-105 shadow-sm"
                     >
                       {tech}
                     </motion.span>
@@ -151,7 +151,7 @@ export default function Projects() {
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`group/btn flex items-center justify-center gap-2 px-4 py-3 rounded-xl font-medium text-responsive-sm transition-all duration-300 shadow-lg hover:shadow-xl ${
+                    className={`group/btn flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-medium text-responsive-sm transition-all duration-300 shadow-lg hover:shadow-xl ${
                       link.label === "Live"
                         ? "btn-primary"
                         : link.label === "GitHub"
