@@ -53,7 +53,6 @@ export const PROFILE = {
   tagline: "Your Title",
   location: "Your Location",
   yearsOfExperience: 0,
-  availability: "Your Availability",
   email: "your.email@domain.com",
   phone: "+91 98765 43210",
   socials: [

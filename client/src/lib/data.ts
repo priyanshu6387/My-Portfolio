@@ -26,7 +26,6 @@ export const PROFILE = {
   tagline: "General Manager & Technical Head",
   location: "India",
   yearsOfExperience: 0, // Fresh graduate/new professional
-  availability: "Open to freelance & full-time",
   email: "hello@yourdomain.com",
   phone: "+91 98765 43210",
   socials: [

@@ -243,16 +243,6 @@ export default function Contact() {
                       <p className="text-emerald-600 dark:text-emerald-400 text-responsive-sm">{PROFILE.location}</p>
                     </div>
                   </div>
-
-                  <div className="flex items-center gap-4 p-5 glass-sm rounded-2xl">
-                    <div className="w-14 h-14 bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center">
-                      <Clock className="w-7 h-7 text-white" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-800 dark:text-white text-responsive-base">Availability</p>
-                      <p className="text-purple-600 dark:text-purple-400 text-responsive-sm">{PROFILE.availability}</p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

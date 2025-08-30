@@ -122,22 +122,17 @@ export default function Hero() {
             </motion.button>
           </motion.div>
 
-          {/* Enhanced Location & Availability */}
+          {/* Enhanced Location */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.4 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 text-responsive-sm mb-8"
+            className="flex items-center justify-center text-responsive-sm mb-8"
           >
             <div className="flex items-center gap-3 p-4 glass-sm rounded-2xl hover:glass transition-all duration-300 group">
               <div className="w-3 h-3 bg-brand-500 rounded-full animate-pulse group-hover:animate-glow" />
               <MapPin className="w-4 h-4 text-brand-500" />
               <span className="text-gray-700 dark:text-gray-300 font-medium">{PROFILE.location}</span>
-            </div>
-            <div className="flex items-center gap-3 p-4 glass-sm rounded-2xl hover:glass transition-all duration-300 group">
-              <div className="w-3 h-3 bg-primary-500 rounded-full animate-pulse group-hover:animate-glow" />
-              <Clock className="w-4 h-4 text-primary-500" />
-              <span className="text-gray-700 dark:text-gray-300 font-medium">{PROFILE.availability}</span>
             </div>
           </motion.div>
 
