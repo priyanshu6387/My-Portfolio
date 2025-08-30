@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from 'next-themes';
 import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import ScrollToTop from '@/components/ScrollToTop';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -62,7 +62,7 @@ export default function RootLayout({
           <main>
             {children}
           </main>
-          <Footer />
+          <ScrollToTop />
         </ThemeProvider>
       </body>
     </html>
