@@ -123,7 +123,7 @@ export default function ExperienceTimeline() {
                       <div className="flex items-center gap-2">
                         <Calendar className="w-4 h-4" />
                         <span className="text-emerald-600 dark:text-emerald-400 font-medium font-serif">
-                          {exp.duration}
+                          {exp.start} - {exp.end}
                         </span>
                       </div>
                     </div>
