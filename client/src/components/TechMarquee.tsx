@@ -58,7 +58,7 @@ export default function TechMarquee() {
         >
           <motion.div
             animate={{ x: isPaused ? 0 : "-50%" }}
-            transition={{ duration: 25, ease: "linear", repeat: Infinity }}
+            transition={{ duration: 15, ease: "linear", repeat: Infinity }}
             className="flex whitespace-nowrap"
           >
             {/* First set of technologies */}
@@ -71,11 +71,11 @@ export default function TechMarquee() {
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.1, y: -8, rotate: 2 }}
-                  className="group px-6 py-4 glass-sm text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap transition-all duration-300 hover:glass hover:shadow-2xl hover:border-brand-500/50 cursor-default relative overflow-hidden"
+                  className="group px-6 py-4 glass-sm text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap transition-all duration-300 hover:glass hover:shadow-2xl hover:border-brand-500/50 cursor-default relative overflow-hidden rounded-2xl"
                 >
                   <span className="relative z-10">{tech}</span>
                   <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-brand-500/10 to-primary-500/10 rounded-xl opacity-0 group-hover:opacity-100"
+                    className="absolute inset-0 bg-gradient-to-r from-brand-500/10 to-primary-500/10 rounded-2xl opacity-0 group-hover:opacity-100"
                     initial={{ scale: 0.8, opacity: 0 }}
                     whileHover={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 0.2 }}
@@ -90,7 +90,7 @@ export default function TechMarquee() {
               {technologies.map((tech, index) => (
                 <div
                   key={`second-${index}`}
-                  className="px-6 py-4 glass-sm text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap"
+                  className="px-6 py-4 glass-sm text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap rounded-2xl"
                 >
                   {tech}
                 </div>
@@ -98,9 +98,7 @@ export default function TechMarquee() {
             </div>
           </motion.div>
 
-          {/* Enhanced Gradient overlays for smooth fade effect */}
-          <div className="absolute left-0 top-0 bottom-0 w-20 sm:w-24 lg:w-32 bg-gradient-to-r from-slate-50 dark:from-slate-800 to-transparent pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-20 sm:w-24 lg:w-32 bg-gradient-to-l from-slate-50 dark:from-slate-800 to-transparent pointer-events-none" />
+          {/* Removed gradient overlays to prevent blur on left and right sides */}
         </div>
 
         <motion.div
