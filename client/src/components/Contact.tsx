@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Mail, Send, Github, Linkedin, Twitter, ExternalLink, MessageCircle, MapPin, Clock, Phone } from "lucide-react";
+import { Mail, Send, Github, Linkedin, Twitter, Instagram, ExternalLink, MessageCircle, MapPin, Clock, Phone } from "lucide-react";
 import { PROFILE } from "@/lib/data";
 
 export default function Contact() {
@@ -40,6 +40,8 @@ export default function Contact() {
         return <Linkedin className="w-5 h-5" />;
       case "X (Twitter)":
         return <Twitter className="w-5 h-5" />;
+      case "Instagram":
+        return <Instagram className="w-5 h-5" />;
       default:
         return <ExternalLink className="w-5 h-5" />;
     }
@@ -258,7 +260,7 @@ export default function Contact() {
                   </h3>
                 </div>
                 
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                   {PROFILE.socials.map((social, idx) => (
                     <motion.a
                       key={social.label}

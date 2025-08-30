@@ -58,7 +58,8 @@ export const PROFILE = {
   socials: [
     { label: "GitHub", href: "https://github.com/yourhandle" },
     { label: "LinkedIn", href: "https://linkedin.com/in/yourhandle" },
-    { label: "X (Twitter)", href: "https://x.com/yourhandle" }
+    { label: "X (Twitter)", href: "https://x.com/yourhandle" },
+    { label: "Instagram", href: "https://instagram.com/yourhandle" }
   ],
 };
 ```
