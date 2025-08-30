@@ -1,31 +1,19 @@
-import React from 'react'
-import Navbar from './Components/Navbar'
-import HomeHero from './Components/HomeHero'
-import About from './Components/About'
-import Experience from './Components/Experience'
-import TechnicalSkills from './Components/Skills'
-import ProjectSection from './Components/Projects'
-import KeyAchievements from './Components/KeyAchievments'
-import Contact from './Components/Contact'
-import MessageSection from './Components/MessageSection'
+import Hero from '@/components/Hero';
+import TechMarquee from '@/components/TechMarquee';
+import Projects from '@/components/Projects';
+import ExperienceTimeline from '@/components/ExperienceTimeline';
+import Skills from '@/components/Skills';
+import Contact from '@/components/Contact';
 
-
-
-
-const page = () => {
+export default function Home() {
   return (
     <>
-    <Navbar/>
-    <HomeHero/>
-    <About/>
-    <Experience/>
-    <TechnicalSkills/>
-    <ProjectSection/>
-    <KeyAchievements/>
-    <Contact/>
-    <MessageSection/>
+      <Hero />
+      <TechMarquee />
+      <Projects />
+      <ExperienceTimeline />
+      <Skills />
+      <Contact />
     </>
-  )
+  );
 }
-
-export default page
