@@ -20,10 +20,7 @@ export default function Skills() {
     visible: { opacity: 1, y: 0 }
   };
 
-  const skillVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: { opacity: 1, scale: 1 }
-  };
+
 
   const skillIcons = {
     "Frontend Development": <Brain className="w-6 h-6" />,
@@ -107,18 +104,12 @@ export default function Skills() {
               {/* Skills Grid */}
               <div className="grid grid-cols-1 gap-3 relative z-10">
                 {skillGroup.items.map((skill, idx) => (
-                  <motion.div
+                  <div
                     key={skill}
-                    variants={skillVariants}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.3, delay: idx * 0.05 }}
-                    viewport={{ once: true }}
-                    whileHover={{ scale: 1.05, y: -2, rotate: 1 }}
-                    className="px-4 py-3 glass-sm text-responsive-sm font-medium text-gray-700 dark:text-gray-300 rounded-xl border border-white/30 dark:border-gray-600/50 text-center transition-all duration-300 hover:glass hover:border-brand-500/50 cursor-default group-hover:scale-105"
+                    className="px-4 py-3 glass-sm text-responsive-sm font-medium text-gray-700 dark:text-gray-300 rounded-xl border border-white/30 dark:border-gray-600/50 text-center transition-all duration-300 hover:glass hover:border-brand-500/50 hover:scale-105 cursor-default"
                   >
                     {skill}
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </motion.div>
