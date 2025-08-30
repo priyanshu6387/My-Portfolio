@@ -75,7 +75,7 @@ export default function Skills() {
           viewport={{ once: true }}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-16"
         >
-          {SKILLS.map((skillGroup, index) => (
+          {SKILLS.map((skillGroup) => (
             <motion.div
               key={skillGroup.title}
               variants={cardVariants}
@@ -103,7 +103,7 @@ export default function Skills() {
 
               {/* Skills Grid */}
               <div className="grid grid-cols-1 gap-3 relative z-10">
-                {skillGroup.items.map((skill, idx) => (
+                {skillGroup.items.map((skill) => (
                   <div
                     key={skill}
                     className="px-4 py-3 glass-sm text-responsive-sm font-medium text-gray-700 dark:text-gray-300 rounded-xl border border-white/30 dark:border-gray-600/50 text-center transition-all duration-300 hover:glass hover:border-brand-500/50 hover:scale-105 cursor-default"

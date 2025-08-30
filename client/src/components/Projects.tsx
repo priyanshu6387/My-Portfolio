@@ -65,7 +65,7 @@ export default function Projects() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8"
         >
-          {PROJECTS.map((project, index) => (
+          {PROJECTS.map((project) => (
             <motion.div
               key={project.title}
               variants={cardVariants}

@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Mail, Send, Github, Linkedin, Twitter, Instagram, ExternalLink, MessageCircle, MapPin, Clock, Phone } from "lucide-react";
+import { Mail, Send, Github, Linkedin, Twitter, Instagram, ExternalLink, MessageCircle, MapPin, Phone } from "lucide-react";
 import { PROFILE } from "@/lib/data";
 
 export default function Contact() {

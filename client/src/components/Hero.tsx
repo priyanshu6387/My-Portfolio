@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download, ExternalLink, MessageCircle, MapPin, Clock } from "lucide-react";
+import { Download, ExternalLink, MessageCircle, MapPin } from "lucide-react";
 import { PROFILE } from "@/lib/data";
 
 export default function Hero() {
