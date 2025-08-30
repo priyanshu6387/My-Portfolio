@@ -45,16 +45,18 @@ export default function Navbar() {
           scrolled ? "shadow-2xl" : "shadow-xl"
         }`}>
           <motion.div
-            whileHover={{ scale: 1.05, rotate: 5 }}
+            whileHover={{ scale: 1.05, rotate: 2 }}
             whileTap={{ scale: 0.95 }}
-            className="relative text-2xl sm:text-3xl font-black gradient-text cursor-pointer select-none group"
+            className="relative cursor-pointer select-none group"
             onClick={() => scrollToSection("#hero")}
           >
-            <span className="relative z-10">PP</span>
+            <span className="relative z-10 text-lg sm:text-xl lg:text-2xl font-serif font-bold tracking-wide bg-gradient-to-r from-brand-600 via-primary-600 to-purple-600 bg-clip-text text-transparent">
+              Priyanshu Patel
+            </span>
             <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-brand-500/20 to-primary-500/20 rounded-xl blur-xl"
-              animate={{ opacity: [0.5, 1, 0.5] }}
-              transition={{ duration: 2, repeat: Infinity }}
+              className="absolute inset-0 bg-gradient-to-r from-brand-500/10 to-primary-500/10 rounded-xl blur-lg"
+              animate={{ opacity: [0.3, 0.7, 0.3] }}
+              transition={{ duration: 3, repeat: Infinity }}
             />
             <Sparkles className="absolute -top-1 -right-1 w-3 h-3 text-brand-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </motion.div>
