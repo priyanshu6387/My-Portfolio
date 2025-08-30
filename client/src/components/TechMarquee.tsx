@@ -38,15 +38,15 @@ export default function TechMarquee() {
             className="inline-flex items-center gap-3 px-6 py-3 glass-sm rounded-full mb-6"
           >
             <Code className="w-5 h-5 text-brand-500" />
-            <span className="text-responsive-sm text-gray-600 dark:text-gray-400 font-medium">
+            <span className="text-responsive-sm text-gray-600 dark:text-gray-400 font-medium font-serif">
               Tech Stack
             </span>
           </motion.div>
 
-          <h2 className="text-responsive-3xl sm:text-responsive-4xl lg:text-responsive-5xl font-black mb-6 gradient-text text-shadow">
+          <h2 className="text-responsive-3xl sm:text-responsive-4xl lg:text-responsive-5xl font-black mb-6 gradient-text text-shadow font-serif">
             Technologies I Work With
           </h2>
-          <p className="text-responsive-lg sm:text-responsive-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-responsive-lg sm:text-responsive-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed font-serif">
             A comprehensive stack of modern technologies for building scalable applications
           </p>
         </motion.div>
@@ -71,7 +71,7 @@ export default function TechMarquee() {
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.1, y: -8, rotate: 2 }}
-                  className="group px-4 sm:px-6 py-3 sm:py-4 glass-sm text-responsive-xs sm:text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap transition-all duration-300 hover:glass hover:shadow-2xl hover:border-brand-500/50 cursor-default relative overflow-hidden rounded-2xl"
+                  className="group px-4 sm:px-6 py-3 sm:py-4 glass-sm text-responsive-xs sm:text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap transition-all duration-300 hover:glass hover:shadow-2xl hover:border-brand-500/50 cursor-default relative overflow-hidden rounded-2xl font-serif"
                 >
                   <span className="relative z-10">{tech}</span>
                   <motion.div
@@ -90,7 +90,7 @@ export default function TechMarquee() {
               {technologies.map((tech, index) => (
                 <div
                   key={`second-${index}`}
-                  className="px-4 sm:px-6 py-3 sm:py-4 glass-sm text-responsive-xs sm:text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap rounded-2xl"
+                  className="px-4 sm:px-6 py-3 sm:py-4 glass-sm text-responsive-xs sm:text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 whitespace-nowrap rounded-2xl font-serif"
                 >
                   {tech}
                 </div>

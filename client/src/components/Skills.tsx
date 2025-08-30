@@ -54,15 +54,15 @@ export default function Skills() {
             className="inline-flex items-center gap-3 px-6 py-3 glass-sm rounded-full mb-6"
           >
             <Brain className="w-5 h-5 text-brand-500" />
-            <span className="text-responsive-sm text-gray-600 dark:text-gray-400 font-medium">
+            <span className="text-responsive-sm text-gray-600 dark:text-gray-400 font-medium font-serif">
               Expertise
             </span>
           </motion.div>
 
-          <h2 className="text-responsive-3xl sm:text-responsive-4xl lg:text-responsive-5xl font-black mb-6 gradient-text text-shadow">
+          <h2 className="text-responsive-3xl sm:text-responsive-4xl lg:text-responsive-5xl font-black mb-6 gradient-text text-shadow font-serif">
             Skills & Expertise
           </h2>
-          <p className="text-responsive-lg sm:text-responsive-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-responsive-lg sm:text-responsive-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed font-serif">
             A comprehensive collection of technical skills, leadership abilities, and tools 
             I&apos;ve mastered through education and hands-on experience.
           </p>
@@ -95,7 +95,7 @@ export default function Skills() {
                 <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-brand-500 to-primary-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   {skillIcons[skillGroup.title as keyof typeof skillIcons] || <Brain className="w-6 h-6 sm:w-8 sm:h-8 text-white" />}
                 </div>
-                <h3 className="text-responsive-lg font-bold text-gray-800 dark:text-white mb-2">
+                <h3 className="text-responsive-lg font-bold text-gray-800 dark:text-white mb-2 font-serif">
                   {skillGroup.title}
                 </h3>
                 <div className="w-16 h-0.5 bg-gradient-to-r from-brand-500 to-primary-500 mx-auto rounded-full" />
@@ -106,7 +106,7 @@ export default function Skills() {
                 {skillGroup.items.map((skill) => (
                   <div
                     key={skill}
-                    className="px-4 py-3 glass-sm text-responsive-sm font-medium text-gray-700 dark:text-gray-300 rounded-xl border border-white/30 dark:border-gray-600/50 text-center transition-all duration-300 hover:glass hover:border-brand-500/50 hover:scale-105 cursor-default"
+                    className="px-4 py-3 glass-sm text-responsive-sm font-medium text-gray-700 dark:text-gray-300 rounded-xl border border-white/30 dark:border-gray-600/50 text-center transition-all duration-300 hover:glass hover:border-brand-500/50 hover:scale-105 cursor-default font-serif"
                   >
                     {skill}
                   </div>
@@ -126,16 +126,16 @@ export default function Skills() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="glass-sm rounded-2xl p-8 hover:glass transition-all duration-300">
-              <h3 className="text-responsive-xl font-bold text-gray-800 dark:text-white mb-6 flex items-center gap-3">
+              <h3 className="text-responsive-xl font-bold text-gray-800 dark:text-white mb-6 flex items-center gap-3 font-serif">
                 <TrendingUp className="w-6 h-6 text-brand-500" />
                 Technical Proficiency
               </h3>
               <div className="space-y-4">
                 {["Frontend", "Backend", "DevOps", "Database"].map((skill, idx) => (
                   <div key={skill} className="space-y-2">
-                    <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400">
-                      <span>{skill}</span>
-                      <span>{85 + idx * 5}%</span>
+                    <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400 font-serif">
+                      <span className="font-serif">{skill}</span>
+                      <span className="font-serif">{85 + idx * 5}%</span>
                     </div>
                     <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                       <motion.div
@@ -152,16 +152,16 @@ export default function Skills() {
             </div>
 
             <div className="glass-sm rounded-2xl p-8 hover:glass transition-all duration-300">
-              <h3 className="text-responsive-xl font-bold text-gray-800 dark:text-white mb-6 flex items-center gap-3">
+              <h3 className="text-responsive-xl font-bold text-gray-800 dark:text-white mb-6 flex items-center gap-3 font-serif">
                 <Users className="w-6 h-6 text-primary-500" />
                 Leadership Skills
               </h3>
               <div className="space-y-4">
                 {["Team Management", "Communication", "Problem Solving", "Strategic Planning"].map((skill, idx) => (
                   <div key={skill} className="space-y-2">
-                    <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400">
-                      <span>{skill}</span>
-                      <span>{90 + idx * 3}%</span>
+                    <div className="flex justify-between text-sm text-gray-600 dark:text-gray-400 font-serif">
+                      <span className="font-serif">{skill}</span>
+                      <span className="font-serif">{90 + idx * 3}%</span>
                     </div>
                     <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                       <motion.div
@@ -196,10 +196,10 @@ export default function Skills() {
                 <BookOpen className="w-10 h-10 text-white" />
               </div>
               
-              <h3 className="text-responsive-2xl font-bold text-gray-800 dark:text-white mb-6">
+              <h3 className="text-responsive-2xl font-bold text-gray-800 dark:text-white mb-6 font-serif">
                 Always Learning & Growing
               </h3>
-              <p className="text-responsive-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-responsive-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed font-serif">
                 I&apos;m constantly exploring new technologies and methodologies to stay 
                 current with industry best practices and emerging trends.
               </p>

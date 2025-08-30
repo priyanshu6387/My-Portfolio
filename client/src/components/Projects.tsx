@@ -44,15 +44,15 @@ export default function Projects() {
             className="inline-flex items-center gap-3 px-6 py-3 glass-sm rounded-full mb-6"
           >
             <Star className="w-5 h-5 text-brand-500" />
-            <span className="text-responsive-sm text-gray-600 dark:text-gray-400 font-medium">
+            <span className="text-responsive-sm text-gray-600 dark:text-gray-400 font-medium font-serif">
               Portfolio
             </span>
           </motion.div>
 
-          <h2 className="text-responsive-3xl sm:text-responsive-4xl lg:text-responsive-5xl font-black mb-6 gradient-text text-shadow">
+          <h2 className="text-responsive-3xl sm:text-responsive-4xl lg:text-responsive-5xl font-black mb-6 gradient-text text-shadow font-serif">
             Featured Projects
           </h2>
-          <p className="text-responsive-lg sm:text-responsive-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-responsive-lg sm:text-responsive-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed font-serif">
             A showcase of my recent work, demonstrating full-stack development skills 
             and problem-solving abilities across various domains.
           </p>
@@ -75,7 +75,7 @@ export default function Projects() {
               {/* Project Header */}
               <div className="mb-8">
                 <div className="flex items-center justify-between mb-6">
-                  <h3 className="text-responsive-xl font-bold text-gray-800 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors duration-300">
+                  <h3 className="text-responsive-xl font-bold text-gray-800 dark:text-white group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors duration-300 font-serif">
                     {project.title}
                   </h3>
                   <motion.div
@@ -85,14 +85,14 @@ export default function Projects() {
                     <ArrowUpRight className="w-4 h-4 text-white" />
                   </motion.div>
                 </div>
-                <p className="text-responsive-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                <p className="text-responsive-base text-gray-600 dark:text-gray-400 leading-relaxed font-serif">
                   {project.description}
                 </p>
               </div>
 
               {/* Highlights */}
               <div className="mb-8 flex-grow">
-                <h4 className="text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 mb-4 uppercase tracking-wide flex items-center gap-2">
+                <h4 className="text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 mb-4 uppercase tracking-wide flex items-center gap-2 font-serif">
                   <div className="w-2 h-2 bg-brand-500 rounded-full" />
                   Key Achievements
                 </h4>
@@ -107,7 +107,7 @@ export default function Projects() {
                       viewport={{ once: true }}
                     >
                       <div className="w-2 h-2 bg-brand-500 rounded-full mt-2 flex-shrink-0 group-hover:animate-glow" />
-                      <span className="text-responsive-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                      <span className="text-responsive-sm text-gray-600 dark:text-gray-400 leading-relaxed font-serif">
                         {highlight}
                       </span>
                     </motion.li>
@@ -117,7 +117,7 @@ export default function Projects() {
 
               {/* Tech Stack */}
               <div className="mb-8">
-                <h4 className="text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 mb-4 uppercase tracking-wide flex items-center gap-2">
+                <h4 className="text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 mb-4 uppercase tracking-wide flex items-center gap-2 font-serif">
                   <div className="w-2 h-2 bg-primary-500 rounded-full" />
                   Technologies
                 </h4>
@@ -129,7 +129,7 @@ export default function Projects() {
                       whileInView={{ opacity: 1, scale: 1 }}
                       transition={{ duration: 0.2, delay: idx * 0.05 }}
                       viewport={{ once: true }}
-                      className="px-3 py-2 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm text-responsive-xs font-medium text-gray-700 dark:text-gray-300 rounded-xl border border-white/40 dark:border-gray-600/60 hover:border-brand-500/60 hover:bg-white/70 dark:hover:bg-gray-700/70 transition-all duration-300 group-hover:scale-105 shadow-sm"
+                      className="px-3 py-2 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm text-responsive-xs font-medium text-gray-700 dark:text-gray-300 rounded-xl border border-white/40 dark:border-gray-600/60 hover:border-brand-500/60 hover:bg-white/70 dark:hover:bg-gray-700/70 transition-all duration-300 group-hover:scale-105 shadow-sm font-serif"
                     >
                       {tech}
                     </motion.span>
@@ -151,7 +151,7 @@ export default function Projects() {
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`group/btn flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-medium text-responsive-sm transition-all duration-300 shadow-lg hover:shadow-xl ${
+                    className={`group/btn flex items-center justify-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-medium text-responsive-sm transition-all duration-300 shadow-lg hover:shadow-xl font-serif ${
                       link.label === "Live"
                         ? "btn-primary"
                         : link.label === "GitHub"
@@ -216,24 +216,24 @@ export default function Projects() {
               <div className="w-16 h-16 bg-gradient-to-r from-brand-500 to-primary-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Star className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl font-bold gradient-text mb-2">25+</div>
-              <div className="text-gray-600 dark:text-gray-400">Projects Completed</div>
+                              <div className="text-3xl font-bold gradient-text mb-2 font-serif">25+</div>
+                <div className="text-gray-600 dark:text-gray-400 font-serif">Projects Completed</div>
             </div>
             
             <div className="glass-sm rounded-2xl p-8 text-center hover:glass transition-all duration-300 group">
               <div className="w-16 h-16 bg-gradient-to-r from-primary-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl font-bold gradient-text mb-2">100+</div>
-              <div className="text-gray-600 dark:text-gray-400">Happy Clients</div>
+                              <div className="text-3xl font-bold gradient-text mb-2 font-serif">100+</div>
+                <div className="text-gray-600 dark:text-gray-400 font-serif">Happy Clients</div>
             </div>
             
             <div className="glass-sm rounded-2xl p-8 text-center hover:glass transition-all duration-300 group">
               <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <GitBranch className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl font-bold gradient-text mb-2">500+</div>
-              <div className="text-gray-600 dark:text-gray-400">Git Commits</div>
+                              <div className="text-3xl font-bold gradient-text mb-2 font-serif">500+</div>
+                <div className="text-gray-600 dark:text-gray-400 font-serif">Git Commits</div>
             </div>
           </div>
         </motion.div>

@@ -72,7 +72,7 @@ export default function Navbar() {
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => scrollToSection(item.href)}
-                className="nav-link text-responsive-sm font-medium px-4 py-2 rounded-xl hover:bg-white/10 dark:hover:bg-gray-800/30 transition-all duration-300 relative group"
+                className="nav-link text-responsive-sm font-medium px-4 py-2 rounded-xl hover:bg-white/10 dark:hover:bg-gray-800/30 transition-all duration-300 relative group font-serif"
               >
                 <span className="relative z-10">{item.label}</span>
                 <motion.div
@@ -146,7 +146,7 @@ export default function Navbar() {
                       whileHover={{ scale: 1.02, x: 5 }}
                       whileTap={{ scale: 0.98 }}
                       onClick={() => scrollToSection(item.href)}
-                      className="text-left nav-link text-responsive-base py-4 px-6 rounded-2xl hover:bg-white/10 dark:hover:bg-gray-800/30 transition-all duration-300 font-medium group relative"
+                      className="text-left nav-link text-responsive-base py-4 px-6 rounded-2xl hover:bg-white/10 dark:hover:bg-gray-800/30 transition-all duration-300 font-medium group relative font-serif"
                     >
                       <span className="relative z-10">{item.label}</span>
                       <motion.div

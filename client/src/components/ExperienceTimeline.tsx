@@ -44,15 +44,15 @@ export default function ExperienceTimeline() {
             className="inline-flex items-center gap-3 px-6 py-3 glass-sm rounded-full mb-6"
           >
             <Briefcase className="w-5 h-5 text-brand-500" />
-            <span className="text-responsive-sm text-gray-600 dark:text-gray-400 font-medium">
+            <span className="text-responsive-sm text-gray-600 dark:text-gray-400 font-medium font-serif">
               Experience
             </span>
           </motion.div>
 
-          <h2 className="text-responsive-3xl sm:text-responsive-4xl lg:text-responsive-5xl font-black mb-6 gradient-text text-shadow">
+          <h2 className="text-responsive-3xl sm:text-responsive-4xl lg:text-responsive-5xl font-black mb-6 gradient-text text-shadow font-serif">
             Work Experience
           </h2>
-          <p className="text-responsive-lg sm:text-responsive-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-responsive-lg sm:text-responsive-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed font-serif">
             My professional journey showcasing leadership, technical expertise, and 
             growth in software development and team management.
           </p>
@@ -103,10 +103,10 @@ export default function ExperienceTimeline() {
                   <div className="mb-8 relative z-10">
                     <div className="flex items-start justify-between mb-4">
                       <div>
-                        <h3 className="text-responsive-xl font-bold text-gray-800 dark:text-white mb-3 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors duration-300">
+                        <h3 className="text-responsive-xl font-bold text-gray-800 dark:text-white mb-3 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors duration-300 font-serif">
                           {exp.role}
                         </h3>
-                        <p className="text-responsive-lg font-semibold text-brand-600 dark:text-brand-400 mb-3 flex items-center gap-2">
+                        <p className="text-responsive-lg font-semibold text-brand-600 dark:text-brand-400 mb-3 flex items-center gap-2 font-serif">
                           <Briefcase className="w-5 h-5" />
                           {exp.company}
                         </p>
@@ -119,13 +119,11 @@ export default function ExperienceTimeline() {
                       </motion.div>
                     </div>
                     
-                    <div className="flex items-center gap-4 text-responsive-sm text-gray-500 dark:text-gray-400">
+                    <div className="flex items-center gap-4 text-responsive-sm text-gray-500 dark:text-gray-400 font-serif">
                       <div className="flex items-center gap-2">
                         <Calendar className="w-4 h-4" />
-                        <span>{exp.start}</span>
-                        <span>•</span>
-                        <span className="text-emerald-600 dark:text-emerald-400 font-medium">
-                          {exp.end}
+                        <span className="text-emerald-600 dark:text-emerald-400 font-medium font-serif">
+                          {exp.duration}
                         </span>
                       </div>
                     </div>
@@ -144,7 +142,7 @@ export default function ExperienceTimeline() {
                           viewport={{ once: true }}
                         >
                           <div className="w-3 h-3 bg-gradient-to-r from-brand-500 to-primary-500 rounded-full mt-2 flex-shrink-0 group-hover:animate-glow" />
-                          <span className="text-responsive-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                          <span className="text-responsive-base text-gray-600 dark:text-gray-400 leading-relaxed font-serif">
                             {bullet}
                           </span>
                         </motion.li>
@@ -154,9 +152,9 @@ export default function ExperienceTimeline() {
 
                   {/* Tech Stack */}
                   <div className="relative z-10">
-                    <h4 className="text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 mb-4 uppercase tracking-wide flex items-center gap-2">
-                      <div className="w-2 h-2 bg-primary-500 rounded-full" />
-                      Key Areas
+                    <h4 className="text-responsive-sm font-semibold text-gray-700 dark:text-gray-300 mb-4 uppercase tracking-wide flex items-center gap-2 font-serif">
+                      <div className="w-2 h-2 bg-brand-500 rounded-full" />
+                      Key Achievements
                     </h4>
                     <div className="flex flex-wrap gap-3">
                       {exp.tech.map((tech, idx) => (
@@ -166,7 +164,7 @@ export default function ExperienceTimeline() {
                           whileInView={{ opacity: 1, scale: 1 }}
                           transition={{ duration: 0.2, delay: idx * 0.05 }}
                           viewport={{ once: true }}
-                          className="px-4 py-2 glass-sm text-responsive-xs font-medium text-gray-700 dark:text-gray-300 rounded-full border border-white/30 dark:border-gray-600/50 hover:border-brand-500/50 hover:glass transition-all duration-300 group-hover:scale-105"
+                          className="px-4 py-2 glass-sm text-responsive-xs font-medium text-gray-700 dark:text-gray-300 rounded-full border border-white/30 dark:border-gray-600/50 hover:border-brand-500/50 hover:glass transition-all duration-300 font-serif"
                         >
                           {tech}
                         </motion.span>
@@ -193,7 +191,7 @@ export default function ExperienceTimeline() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
-            className="btn-primary text-responsive-base px-10 py-5 flex items-center gap-4 mx-auto w-fit shadow-2xl hover:shadow-brand-500/25"
+            className="btn-primary text-responsive-base px-10 py-5 flex items-center gap-4 mx-auto w-fit shadow-2xl hover:shadow-brand-500/25 font-serif"
           >
             <Briefcase className="w-6 h-6" />
             <span>View Full Resume</span>
@@ -214,32 +212,32 @@ export default function ExperienceTimeline() {
               <div className="w-12 h-12 bg-gradient-to-r from-brand-500 to-primary-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Briefcase className="w-6 h-6 text-white" />
               </div>
-              <div className="text-2xl font-bold gradient-text mb-2">5+</div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">Years Experience</div>
+              <div className="text-2xl font-bold gradient-text mb-2 font-serif">5+</div>
+              <div className="text-gray-600 dark:text-gray-400 text-sm font-serif">Years Experience</div>
             </div>
             
             <div className="glass-sm rounded-2xl p-6 text-center hover:glass transition-all duration-300 group">
               <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-purple-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <TrendingUp className="w-6 h-6 text-white" />
               </div>
-              <div className="text-2xl font-bold gradient-text mb-2">3</div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">Companies</div>
+              <div className="text-2xl font-bold gradient-text mb-2 font-serif">3</div>
+              <div className="text-gray-600 dark:text-gray-400 text-sm font-serif">Companies</div>
             </div>
             
             <div className="glass-sm rounded-2xl p-6 text-center hover:glass transition-all duration-300 group">
               <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <MapPin className="w-6 h-6 text-white" />
               </div>
-              <div className="text-2xl font-bold gradient-text mb-2">2</div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">Locations</div>
+              <div className="text-2xl font-bold gradient-text mb-2 font-serif">2</div>
+              <div className="text-gray-600 dark:text-gray-400 text-sm font-serif">Locations</div>
             </div>
             
             <div className="glass-sm rounded-2xl p-6 text-center hover:glass transition-all duration-300 group">
               <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-red-500 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Calendar className="w-6 h-6 text-white" />
               </div>
-              <div className="text-2xl font-bold gradient-text mb-2">2020</div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">Started Career</div>
+              <div className="text-2xl font-bold gradient-text mb-2 font-serif">2020</div>
+              <div className="text-gray-600 dark:text-gray-400 text-sm font-serif">Started Career</div>
             </div>
           </div>
         </motion.div>

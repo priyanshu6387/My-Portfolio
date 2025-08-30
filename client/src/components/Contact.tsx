@@ -72,15 +72,15 @@ export default function Contact() {
             className="inline-flex items-center gap-3 px-6 py-3 glass-sm rounded-full mb-6"
           >
             <MessageCircle className="w-5 h-5 text-brand-500" />
-            <span className="text-responsive-sm text-gray-600 dark:text-gray-400 font-medium">
+            <span className="text-responsive-sm text-gray-600 dark:text-gray-400 font-medium font-serif">
               Contact
             </span>
           </motion.div>
 
-          <h2 className="text-responsive-3xl sm:text-responsive-4xl lg:text-responsive-5xl font-black mb-6 gradient-text text-shadow">
+          <h2 className="text-responsive-3xl sm:text-responsive-4xl lg:text-responsive-5xl font-black mb-6 gradient-text text-shadow font-serif">
             Let&apos;s Connect
           </h2>
-          <p className="text-responsive-lg sm:text-responsive-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-responsive-lg sm:text-responsive-xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed font-serif">
             I&apos;m always open to discussing new opportunities, collaborations, 
             or just having a chat about technology and development.
           </p>
@@ -108,14 +108,14 @@ export default function Contact() {
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-brand-500 to-primary-500 rounded-2xl flex items-center justify-center">
                     <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </div>
-                  <h3 className="text-responsive-lg sm:text-responsive-xl font-bold text-gray-800 dark:text-white">
+                  <h3 className="text-responsive-lg sm:text-responsive-xl font-bold text-gray-800 dark:text-white font-serif">
                     Send me a message
                   </h3>
                 </div>
                 
                 <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-responsive-sm font-medium text-gray-700 dark:text-gray-300 mb-2 sm:mb-3">
+                    <label htmlFor="name" className="block text-responsive-sm font-medium text-gray-700 dark:text-gray-300 mb-2 sm:mb-3 font-serif">
                       Name
                     </label>
                     <input
@@ -131,7 +131,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-responsive-sm font-medium text-gray-700 dark:text-gray-300 mb-2 sm:mb-3">
+                    <label htmlFor="email" className="block text-responsive-sm font-medium text-gray-700 dark:text-gray-300 mb-2 sm:mb-3 font-serif">
                       Email
                     </label>
                     <input
@@ -147,7 +147,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-responsive-sm font-medium text-gray-700 dark:text-gray-300 mb-2 sm:mb-3">
+                    <label htmlFor="message" className="block text-responsive-sm font-medium text-gray-700 dark:text-gray-300 mb-2 sm:mb-3 font-serif">
                       Message
                     </label>
                     <textarea
@@ -166,7 +166,7 @@ export default function Contact() {
                     type="submit"
                     whileHover={{ scale: 1.02, y: -2 }}
                     whileTap={{ scale: 0.98 }}
-                    className="btn-primary w-full text-responsive-base py-3 sm:py-4 flex items-center justify-center gap-2 sm:gap-3 shadow-2xl hover:shadow-brand-500/25"
+                    className="btn-primary w-full text-responsive-base py-3 sm:py-4 flex items-center justify-center gap-2 sm:gap-3 shadow-2xl hover:shadow-brand-500/25 font-serif"
                   >
                     <Send className="w-4 h-4 sm:w-5 sm:h-5" />
                     Send Message
@@ -198,7 +198,7 @@ export default function Contact() {
                   <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-purple-500 rounded-2xl flex items-center justify-center">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-responsive-xl font-bold text-gray-800 dark:text-white">
+                  <h3 className="text-responsive-xl font-bold text-gray-800 dark:text-white font-serif">
                     Get in touch
                   </h3>
                 </div>
@@ -213,8 +213,8 @@ export default function Contact() {
                       <Mail className="w-7 h-7 text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800 dark:text-white text-responsive-base">Email</p>
-                      <p className="text-brand-600 dark:text-brand-400 text-responsive-sm">{PROFILE.email}</p>
+                      <p className="font-semibold text-gray-800 dark:text-white text-responsive-base font-serif">Email</p>
+                      <p className="text-brand-600 dark:text-brand-400 text-responsive-sm font-serif">{PROFILE.email}</p>
                     </div>
                   </motion.a>
 
@@ -229,8 +229,8 @@ export default function Contact() {
                       <Phone className="w-7 h-7 text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800 dark:text-white text-responsive-base">Phone & WhatsApp</p>
-                      <p className="text-green-600 dark:text-green-400 text-responsive-sm">{PROFILE.phone}</p>
+                      <p className="font-semibold text-gray-800 dark:text-white text-responsive-base font-serif">Phone & WhatsApp</p>
+                      <p className="text-green-600 dark:text-green-400 text-responsive-sm font-serif">{PROFILE.phone}</p>
                     </div>
                   </motion.a>
 
@@ -239,8 +239,8 @@ export default function Contact() {
                       <MapPin className="w-7 h-7 text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-800 dark:text-white text-responsive-base">Location</p>
-                      <p className="text-emerald-600 dark:text-emerald-400 text-responsive-sm">{PROFILE.location}</p>
+                      <p className="font-semibold text-gray-800 dark:text-white text-responsive-base font-serif">Location</p>
+                      <p className="text-emerald-600 dark:text-green-400 text-responsive-sm font-serif">{PROFILE.location}</p>
                     </div>
                   </div>
                 </div>
@@ -261,7 +261,7 @@ export default function Contact() {
                   <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center">
                     <ExternalLink className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-responsive-xl font-bold text-gray-800 dark:text-white">
+                  <h3 className="text-responsive-xl font-bold text-gray-800 dark:text-white font-serif">
                     Follow me
                   </h3>
                 </div>
@@ -284,7 +284,7 @@ export default function Contact() {
                       <div className="w-12 h-12 bg-gradient-to-r from-brand-500 to-primary-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                         {getSocialIcon(social.label)}
                       </div>
-                      <span className="text-responsive-sm font-medium text-gray-700 dark:text-gray-300 text-center">
+                      <span className="text-responsive-sm font-medium text-gray-700 dark:text-gray-300 text-center font-serif">
                         {social.label}
                       </span>
                     </motion.a>

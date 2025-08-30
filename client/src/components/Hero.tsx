@@ -48,7 +48,7 @@ export default function Hero() {
             className="inline-flex items-center gap-3 px-6 py-3 glass-sm rounded-full mb-6"
           >
             <div className="w-2 h-2 bg-brand-500 rounded-full animate-pulse" />
-            <span className="text-responsive-lg text-gray-600 dark:text-gray-400 font-medium">
+            <span className="text-responsive-lg text-gray-600 dark:text-gray-400 font-medium font-serif">
               Hello, I&apos;m
             </span>
           </motion.div>
@@ -58,7 +58,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="text-responsive-5xl sm:text-responsive-6xl lg:text-responsive-7xl xl:text-responsive-8xl font-bold mb-6 gradient-text leading-tight tracking-tight text-shadow-lg"
+            className="text-responsive-5xl sm:text-responsive-6xl lg:text-responsive-7xl xl:text-responsive-8xl font-bold mb-6 gradient-text leading-tight tracking-tight text-shadow-lg font-serif"
           >
             {PROFILE.name}
           </motion.h1>
@@ -68,7 +68,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="text-responsive-xl sm:text-responsive-2xl lg:text-responsive-3xl font-bold text-gray-700 dark:text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed"
+            className="text-responsive-xl sm:text-responsive-2xl lg:text-responsive-3xl font-bold text-gray-700 dark:text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed font-serif"
           >
             {PROFILE.tagline}
           </motion.h2>
@@ -78,7 +78,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.0 }}
-            className="text-responsive-lg sm:text-responsive-xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed"
+            className="text-responsive-lg sm:text-responsive-xl text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed font-serif"
           >
             Leading technical innovation and development teams at Triostack Technologies. 
             Fresh perspective with strong technical foundation and leadership potential.
@@ -95,7 +95,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection("#projects")}
-              className="btn-primary text-responsive-base px-6 py-3 sm:px-8 sm:py-4 md:px-10 flex items-center gap-2 sm:gap-3 group shadow-2xl hover:shadow-brand-500/25 w-full sm:w-auto justify-center"
+              className="btn-primary text-responsive-base px-6 py-3 sm:px-8 sm:py-4 md:px-10 flex items-center gap-2 sm:gap-3 group shadow-2xl hover:shadow-brand-500/25 w-full sm:w-auto justify-center font-serif"
             >
               <span>View Projects</span>
               <ExternalLink className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
@@ -105,7 +105,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               onClick={downloadResume}
-              className="btn-secondary text-responsive-base px-6 py-3 sm:px-8 sm:py-4 md:px-10 flex items-center gap-2 sm:gap-3 group shadow-2xl w-full sm:w-auto justify-center"
+              className="btn-secondary text-responsive-base px-6 py-3 sm:px-8 sm:py-4 md:px-10 flex items-center gap-2 sm:gap-3 group shadow-2xl w-full sm:w-auto justify-center font-serif"
             >
               <span>Download Resume</span>
               <Download className="w-5 h-5 group-hover:translate-y-1 transition-transform duration-200" />
@@ -115,7 +115,7 @@ export default function Hero() {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => scrollToSection("#contact")}
-              className="btn-accent text-responsive-base px-6 py-3 sm:px-8 sm:py-4 md:px-10 flex items-center gap-2 sm:gap-3 group shadow-2xl hover:shadow-purple-500/25 w-full sm:w-auto justify-center"
+              className="btn-accent text-responsive-base px-6 py-3 sm:px-8 sm:py-4 md:px-10 flex items-center gap-2 sm:gap-3 group shadow-2xl hover:shadow-purple-500/25 w-full sm:w-auto justify-center font-serif"
             >
               <span>Let&apos;s Talk</span>
               <MessageCircle className="w-5 h-5 group-hover:scale-110 transition-transform duration-200" />
@@ -132,7 +132,7 @@ export default function Hero() {
             <div className="flex items-center gap-3 p-4 glass-sm rounded-2xl hover:glass transition-all duration-300 group">
               <div className="w-3 h-3 bg-brand-500 rounded-full animate-pulse group-hover:animate-glow" />
               <MapPin className="w-4 h-4 text-brand-500" />
-              <span className="text-gray-700 dark:text-gray-300 font-medium">{PROFILE.location}</span>
+              <span className="text-gray-700 dark:text-gray-300 font-medium font-serif">{PROFILE.location}</span>
             </div>
           </motion.div>
 
@@ -144,16 +144,16 @@ export default function Hero() {
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-2xl mx-auto mb-12"
           >
             <div className="glass-sm rounded-2xl p-4 sm:p-6 text-center hover:glass transition-all duration-300">
-              <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2">5+</div>
-              <div className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">Years Experience</div>
+              <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2 font-serif">5+</div>
+              <div className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm font-serif">Years Experience</div>
             </div>
             <div className="glass-sm rounded-2xl p-4 sm:p-6 text-center hover:glass transition-all duration-300">
-              <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2">50+</div>
-              <div className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">Projects Completed</div>
+              <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2 font-serif">50+</div>
+              <div className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm font-serif">Projects Completed</div>
             </div>
             <div className="glass-sm rounded-2xl p-4 sm:p-6 text-center hover:glass transition-all duration-300">
-              <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2">20+</div>
-              <div className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm">Technologies</div>
+              <div className="text-2xl sm:text-3xl font-bold gradient-text mb-2 font-serif">20+</div>
+              <div className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm font-serif">Technologies</div>
             </div>
           </motion.div>
 
