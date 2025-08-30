@@ -24,15 +24,15 @@ export type SkillGroup = {
 export const PROFILE = {
   name: "Priyanshu Patel",
   tagline: "General Manager & Technical Head",
-  location: "India",
+  location: "Beta 1 Greater Noida, Uttar Pradesh",
   yearsOfExperience: 0, // Fresh graduate/new professional
-  email: "hello@yourdomain.com",
-  phone: "+91 98765 43210",
+  email: "priyanshupatel405@gmail.com",
+  phone: "+91 6387760877",
   socials: [
-    { label: "GitHub", href: "https://github.com/yourhandle" },
-    { label: "LinkedIn", href: "https://linkedin.com/in/yourhandle" },
-    { label: "X (Twitter)", href: "https://x.com/june_14_1947" },
-    { label: "Instagram", href: "https://instagram.com/yourhandle" }
+    { label: "GitHub", href: "https://github.com/priyanshu6387" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/priyanshu-patel-3a100a323/" },
+    { label: "X (Twitter)", href: "https://x.com/PriyanshuP61386" },
+    { label: "Instagram", href: "https://instagram.com/priyanshupatel.6387" }
   ],
 };
 
