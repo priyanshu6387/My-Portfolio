@@ -5,6 +5,7 @@ export type Project = {
   tech: string[];
   links: { label: "Live" | "GitHub" | string; href: string }[];
   image?: string; // optional thumbnail path
+  category?: "featured" | "company" | "personal"; // project category
 };
 
 export type Experience = {
@@ -36,7 +37,8 @@ export const PROFILE = {
   ],
 };
 
-export const PROJECTS: Project[] = [
+// Company/Professional Projects
+export const COMPANY_PROJECTS: Project[] = [
   {
     title: "Robo Books (Accounting SaaS)",
     description: "Zoho-Books inspired accounting platform with dashboards, banking, and automations.",
@@ -50,6 +52,7 @@ export const PROJECTS: Project[] = [
       { label: "Live", href: "https://robobooks.example.com" },
       { label: "GitHub", href: "https://github.com/yourhandle/robobooks" }
     ],
+    category: "company"
   },
   {
     title: "Triostack ERP",
@@ -63,6 +66,22 @@ export const PROJECTS: Project[] = [
     links: [
       { label: "GitHub", href: "https://github.com/yourhandle/triostack-erp" }
     ],
+    category: "company"
+  },
+  {
+    title: "School ERP",
+    description: "Comprehensive school management system with student, teacher, and admin modules.",
+    highlights: [
+      "Complete school management solution with multiple modules",
+      "Student enrollment, attendance, and grade management",
+      "Teacher portal with assignment and grade submission"
+    ],
+    tech: ["Next.js", "Node.js", "MongoDB", "Tailwind", "Express"],
+    links: [
+      { label: "Live", href: "https://schoolerp.example.com" },
+      { label: "GitHub", href: "https://github.com/yourhandle/school-erp" }
+    ],
+    category: "company"
   },
   {
     title: "Codemap",
@@ -76,7 +95,48 @@ export const PROJECTS: Project[] = [
     links: [
       { label: "Live", href: "https://codemap.online" }
     ],
+    category: "company"
   },
+  {
+    title: "Trio CRM",
+    description: "Customer Relationship Management system for businesses to manage leads and sales.",
+    highlights: [
+      "Lead management and sales pipeline tracking",
+      "Customer communication and follow-up automation",
+      "Analytics dashboard for sales performance"
+    ],
+    tech: ["Next.js", "Node.js", "MongoDB", "Tailwind", "Express"],
+    links: [
+      { label: "Live", href: "https://triocrm.example.com" },
+      { label: "GitHub", href: "https://github.com/yourhandle/trio-crm" }
+    ],
+    category: "company"
+  }
+];
+
+// Personal/Independent Projects
+export const PERSONAL_PROJECTS: Project[] = [
+  {
+    title: "My LMS",
+    description: "Personal Learning Management System for skill development and project tracking.",
+    highlights: [
+      "Built with modern web technologies and responsive design",
+      "Personal project showcasing full-stack development skills",
+      "Custom features for learning progress tracking"
+    ],
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Personal Project"],
+    links: [
+      { label: "Live", href: "https://mylms.example.com" },
+      { label: "GitHub", href: "https://github.com/priyanshu6387/mylms" }
+    ],
+    category: "personal"
+  }
+];
+
+// Legacy PROJECTS array for backward compatibility
+export const PROJECTS: Project[] = [
+  ...COMPANY_PROJECTS,
+  ...PERSONAL_PROJECTS
 ];
 
 export const EXPERIENCE: Experience[] = [
